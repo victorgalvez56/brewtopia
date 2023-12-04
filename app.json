@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Brewtopia Mobile",
+    "slug": "brewtopia-mobile",
+    "owner": "olegpou",
+    "version": "0.3.1",
+    "orientation": "portrait",
+    "scheme": "com.brewtopia.mobile",
+    "icon": "./assets/images/app-icon-all.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF7558"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "facebookScheme": "fb454299575342580",
+    "facebookAppId": "454299575342580",
+    "facebookDisplayName": "Brewtopia",
+    "android": {
+      "versionCode": 1,
+      "icon": "./assets/images/app-icon-android-legacy.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
+        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+      },
+      "package": "com.brewtopia.mobile",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBOiVYxSz3ii0PXxwnf-vWzyXLPwMzhnB4"
+        }
+      }
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brewtopia.mobile",
+      "buildNumber": "1",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBOiVYxSz3ii0PXxwnf-vWzyXLPwMzhnB4"
+      },
+      "infoPlist": {
+        "FacebookAppID": "454299575342580",
+        "FacebookDisplayName": "Brewtopia",
+        "FacebookClientToken": "a4f6eec3b628f92f8e818890ac1a9019",
+        "NSAppTransportSecurity": {
+          "NSExceptionDomains": {
+            "localhost": {
+              "NSExceptionAllowsInsecureHTTPLoads": true,
+              "NSIncludesSubdomains": true
+            },
+            "18.134.172.89": {
+              "NSExceptionAllowsInsecureHTTPLoads": true,
+              "NSIncludesSubdomains": true
+            },
+            "amazonaws.com": {
+              "NSExceptionAllowsInsecureHTTPLoads": true,
+              "NSIncludesSubdomains": true
+            }
+          }
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png"
+    },
+    "userInterfaceStyle": "automatic",
+    "extra": {
+      "eas": {
+        "projectId": "2d8f308a-84ba-407a-9366-92499b2aaec8"
+      }
+    }
+  }
+}

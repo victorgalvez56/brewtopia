@@ -1,0 +1,23 @@
+import React, { FC } from "react"
+import { observer } from "mobx-react-lite"
+import { StackScreenProps } from "@react-navigation/stack"
+import { NavigatorParamList } from "../../navigators"
+import { Screen } from "../../components"
+import {Text,View} from 'react-native'
+// import { useStores } from "../../models"
+import { color } from "../../theme"
+import tw from "../../utils/tailwind"
+
+export const <%= props.pascalCaseName %>Screen: FC<StackScreenProps<NavigatorParamList, "<%= props.camelCaseName %>">> = observer(({navigation})=> {
+  // Pull in one of our MST stores
+  // const { someStore, anotherStore } = useStores()
+
+  return (
+    <Screen style={tw`flex-1`} backgroundColor={color.palette.white} preset="scroll">
+      <View>
+        <View/>
+        <Text><%= props.camelCaseName %></Text>
+      </View>
+    </Screen>
+  )
+})
